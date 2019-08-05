@@ -7,12 +7,60 @@
             body {
                 background-color:antiquewhite;
             }
-            p{
-                font :bold;
+
+            .block{
+                border: 1px solid green;
+                border-radius: 5px;
+                height: 100px;
+            }
+
+            .content{
+                height: 500px;
+                border: 2px dotted green;
+                border-radius: 10px;
+                color: darkolivegreen;
+            }
+
+            #topLogo img{
+                position: absolute;
+                top:0px;
             }
         </style>
     </head>
     <body>
-        <p>This is my first page</p>
+        <!--This is header-->
+        <header id ="topHeader" class = "block">
+            <h1 style="text-align: center; color:blue;">Git Demo</h1>
+            <div id="topLogo">
+                    <img src="htmllogo.png"/>
+            </div>
+            
+        </header>
+
+        <!--This is navigation-->
+        <nav id = "topNav">
+            <ul id = "topNavList">
+                <li>
+                    <a href = "about.html">AboutUs</a>
+                </li>
+                <li>
+                    <a href = "contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href ="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--This is main section-->
+        <main id = "mainContent" class = "content">
+            <p> This is the main section. Content goes here. </p>
+        </main>
+
+        <!--This is footer section-->
+        <footer id = "bottomFooter" class = "block">
+            <span> &copy; 2019</span>
+        </footer>
+
     </body>
 </html>
