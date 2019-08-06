@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> HTML List Demo</title>
+    <meta charset="utf-8" />
+    <style>
+        header {
+            border: 1px solid blue;
+            height: 100px;
+            border-radius: 10px;
+            padding: 10px 10px;
+            margin: 5px;
+        }
+
+        header h1 {
+            text-align: center;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #topNav {
+            float: right;
+        }
+
+        #topNav ul {
+            list-style: none;
+        }
+
+        #topNav ul li {
+            display: inline;
+        }
+
+        #sidebar {
+            width: 25%;
+            border: 1px solid blue;
+            border-radius: 5px;
+            float: left;
+            min-height: 400px;
+            padding: 10px 10px;
+            margin: 5px;
+        }
+
+        #main-content {
+            width: 70%;
+            height: 400px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            float: right;
+            padding: 10px 10px;
+            margin: 5px;
+        }
+
+        #clear-block {
+            clear: both;
+        }
+
+        footer {
+            min-height: 50px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        footer span {
+            font: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ol li {
+            color: brown;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+
+        table#tableDemo {
+            border: 2px solid green;
+            border-radius: 5px;
+            padding: 10px 10px;
+        }
+
+        table#tableDemo thead tr {
+            background-color: bisque;
+        }
+
+        table#tableDemo tbody tr {
+            background-color: aqua;
+        }
+
+        table#tableDemo tbody tr td {
+            border: 2px solid black;
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="topHeader">
+        <h1>List Demo</h1>
+        <nav id="topNav">
+            <ul>
+                <li> <a href="about.html">About</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
+                <li> <a href="feedback.html ">Feedback</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="center-block">
+        <div id="sidebar">
+            <nav id="sideNav">
+                <span>
+                    Nav goes here
+                </span>
+            </nav>
+
+            <iframe src="https://www.youtube.com">Youtube 
+            </iframe>
+        </div>
+        <div id="main-content">
+            <section>
+                <h2> Main content goes here</h2>
+                <h3>Odered List Demo</h3>
+                <ol type="1" start="10">
+                    <li>HTML 5</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                </ol>
+            </section>
+
+            <section>
+                <table id="tableDemo">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Deepak</td>
+                            <td>Gopidi</td>
+                        </tr>
+                        <tr>
+                                <td>2</td>
+                                <td>Deepak</td>
+                                <td>Gopidi</td>
+                            </tr>
+                            <tr>
+                                    <td>3</td>
+                                    <td>Deepak</td>
+                                    <td>Gopidi</td>
+                                </tr>
+                    </tbody>
+
+
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <div id="clear-block">
+
+    </div>
+
+    <footer id="footer">
+        <span>&copy; 2019 </span>
+    </footer>
+</body>
+
+</html>
